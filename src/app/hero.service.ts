@@ -22,4 +22,10 @@ export class HeroService {
   //   return HEROES;
   // }
 
+  getHero(id: number): Promise<Hero> {
+    return this.getHeroes()
+               .then(heroes => heroes.find(hero => hero.id === id));
+  }
+
+  
 }
