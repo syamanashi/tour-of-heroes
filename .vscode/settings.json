@@ -1,0 +1,17 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.idea": {},
+		// "**/node_modules": {},
+		"npm-debug.log*": {},
+		"typings": {},
+		"**/*.map": {},
+		"**/*.js": {
+			"when": "$(basename).ts"
+		}
+    }, 
+    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "afterDelay"
+}
