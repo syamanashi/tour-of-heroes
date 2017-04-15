@@ -86,7 +86,8 @@ export class AppComponent implements OnInit  {
 
   getHeroes(): void {
     // Pass the callback function as an argument to the Promise's then() method:
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
+    // this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
 
   // Synchronous (old):
