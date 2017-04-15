@@ -27,6 +27,15 @@ testem.log
 #System Files
 .DS_Store
 
-#Compiled JS files
-/src/app/**/*.js
-/src/app/**/*.map
+system-config.js*
+app/**/*.js
+app/**/*.map
+node_modules
+jspm_packages
+bower_components
+aot/*
+dist/*
+yarn.lock
+
+src/**/*.js
+src/**/*.js.map
